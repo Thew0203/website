@@ -1,0 +1,142 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(145deg, #3a87da, #174c94); /* Blue gradient */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Background shadow effect */
+    height: 100vh;
+    justify-content: center; /* Vertically center the content */
+  }
+  
+  /* Back Button */
+  .back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #003f7f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .back-btn:hover {
+    background-color: #00509e;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+  }
+  
+  
+  
+  /* Information Section */
+  .about-info {
+    display: flex;
+    justify-content: center; /* Align items in the center */
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 40px;
+  }
+  
+ 
+  
+  /* Location Section */
+  .location {
+    text-align: center; /* Center the location text */
+    margin-bottom: 30px;
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  .location h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #f4b400;
+  }
+  
+  .location p {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  /* Experience Section */
+  .experience-section {
+    margin-top: 60px;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  /* My Experiences */
+  .experience-details h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .experience {
+    background-color: #1e3a56;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .experience h3 {
+    font-size: 22px;
+    color: #f4b400;
+    margin-bottom: 10px;
+  }
+  
+  .experience p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  
+  /* Keyframes for Progress Animation */
+  @keyframes grow {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-info {
+      flex-direction: column;
+    }
+  
+  
+    .experience-section {
+      margin-top: 20px;
+    }
+  
+    .experience-details h2 {
+      font-size: 24px;
+    }
+  
+    .experience h3 {
+      font-size: 18px;
+    }
+  
+    .experience p {
+      font-size: 14px;
+    }
+  }
+  
